@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quizify - Auto MCQ Generator</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <!-- Background Design -->
+  <div class="background-design"></div>
+
+  <!-- Top-left Branding -->
+  <div class="logo">QUIZIFY</div>
+
+  <!-- Big Bold Quote -->
+  <p class="quote">Time to analyze what you've learned.</p>
+
+  <!-- Main Upload Container -->
+  <div class="container">
+    <header>
+      <h1>Upload PDF & Generate MCQs</h1>
+    </header>
+
+    <main>
+      <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="pdfUpload" class="upload-label">Upload Your PDF:</label>
+        <input type="file" id="pdfUpload" name="pdf" accept=".pdf" required>
+
+        <button type="submit">Generate MCQs</button>
+      </form>
+    </main>
+  </div>
+</body>
+</html>
