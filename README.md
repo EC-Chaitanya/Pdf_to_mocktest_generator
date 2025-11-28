@@ -23,3 +23,11 @@ PDF Parsing: PyMuPDF.
 
 Frontend: HTML5, CSS3, and Jinja2 templating.
 
+## 📸 Screenshots
+
+| Upload Page | Quiz Interface | Results Analysis |
+|:---:|:---:|:---:|
+| <img src="Screenshot 2025-11-28 224104.png "/> | <img src="Screenshot 2025-11-28 224104.png" /> | <img src="Screenshot 2025-11-28 224104.png" /> |
+
+---
+
