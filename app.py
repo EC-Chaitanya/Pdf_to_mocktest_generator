@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 import fitz  # PyMuPDF
 import json
 
-app = app 
+ 
 
 if __name__ == '__main__':
     app.run(debug=True)
@@ -125,3 +125,4 @@ def submit_quiz():
 # Run the app
 if __name__ == '__main__':
     app.run(debug=True)
+app = app
