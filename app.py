@@ -5,20 +5,22 @@ from dotenv import load_dotenv
 import fitz  # PyMuPDF
 import json
 
-# Load environment variables from .env file
+app = app 
+
+if __name__ == '__main__':
+    app.run(debug=True)
 load_dotenv()
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
-# Initialize the Flask app
 app = Flask(__name__)
 
-# Route for the home page
+
 @app.route('/')
 def index():
     """Renders the main upload page."""
     return render_template('index.html')
 
-# Route to handle PDF upload and MCQ generation
+
 @app.route('/upload', methods=['POST'])
 def upload_pdf():
     """Handles file upload, extracts text, and generates MCQs using Gemini API."""
